@@ -1,0 +1,47 @@
+@import '../../sass/mixins';
+
+main {
+    background-image: url(../../assets/background.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .search {
+        width: 500px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        width: 95%;
+        @include breakpoint-tablet{
+            width: 550px;
+        }
+        .search-input {
+            font-size: 8px;
+            @include breakpoint-tablet {
+                font-size: 12px;
+            }
+        }
+    }
+    a {
+        cursor: pointer;
+        .pokeball {
+            height: 40vmin;
+            margin: auto;
+            pointer-events: none;
+        }
+    }
+    .logo {
+        width: 85%;
+        @include breakpoint-tablet {
+            width: 550px;
+        }
+    }
+    .search-button {
+        font-size: 8px;
+        @include breakpoint-tablet {
+            font-size: 12px;
+        }
+    }
+}
